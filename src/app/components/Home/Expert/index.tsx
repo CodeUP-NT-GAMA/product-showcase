@@ -14,10 +14,40 @@ const Expert = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setChiefDetail(data.ExpertChiefData)
+        setChiefDetail(
+            [
+              {
+                profession: 'Lead Software Engineer',
+                name: 'Ayesh Jayasekara',
+                imgSrc: '/images/Expert/Ayesh.png',
+                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+              },
+              {
+                profession: 'UI / UX Designer',
+                name: 'Chathura Janadara',
+                imgSrc: '/images/Expert/Chathura.png',
+                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+              },
+              {
+                profession: 'QA Engineer',
+                name: 'Prajwal Niroula',
+                imgSrc: '/images/Expert/Prajwal.png',
+                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+              },
+              {
+                profession: 'Software Engineer',
+                name: 'Ravindu Supun',
+                imgSrc: '/images/Expert/Ravindu.png',
+                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+              },
+              {
+                profession: 'Full Stack Developer',
+                name: 'Bishnu Khanal',
+                imgSrc: '/images/Expert/Bishnu.png',
+                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+              },
+            ]
+        )
       } catch (error) {
         console.error('Error fetching services:', error)
       } finally {
@@ -59,13 +89,13 @@ const Expert = () => {
   }
 
   return (
-    <section className='bg-primary/10'>
+    <section id='team' className='bg-primary/10'>
       <div className='container'>
         <div className='text-center'>
           <p className='text-primary text-lg font-normal mb-3 tracking-widest uppercase'>
-            Our Chefs
+            The Wizards
           </p>
-          <h2>Meet Our Culinary Experts</h2>
+          <h2>Our Tech Team: The Power Behind the Splash</h2>
         </div>
         <Slider {...settings}>
           {loading
@@ -79,17 +109,19 @@ const Expert = () => {
                       <Image
                         src={items.imgSrc}
                         alt='gaby'
-                        width={362}
-                        height={262}
-                        className='inline-block m-auto w-auto'
+                        width={500}
+                        height={500}
+                       
                       />
                       <div className='absolute top-[75%] -right-[10%]'>
-                        <Image
-                          src={'/images/Expert/Linkedin.svg'}
-                          alt='linkedin'
-                          width={220}
-                          height={120}
-                        />
+                        <a href={items.linkedin} target='_blank' rel='noreferrer'>
+                          <Image
+                              src={'/images/Expert/Linkedin.svg'}
+                              alt='linkedin'
+                              width={220}
+                              height={120}
+                          />
+                        </a>
                       </div>
                     </div>
                     <div className='mt-16'>

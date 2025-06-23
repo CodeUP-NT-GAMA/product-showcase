@@ -3,12 +3,13 @@ import Hero from '@/app/components/Home/Hero'
 import Features from '@/app/components/Home/Features'
 import Cook from '@/app/components/Home/Cook'
 import Expert from '@/app/components/Home/Expert'
+import Tech from '@/app/components/Home/Tech'
 import Gallery from '@/app/components/Home/Gallery'
 import Newsletter from '@/app/components/Home/Newsletter'
 import { Metadata } from 'next'
 import ContactForm from './components/Contact/Form'
 export const metadata: Metadata = {
-  title: 'Kitchen',
+  title: 'AquaLeanyer Water Park',
 }
 
 export default function Home() {
@@ -16,10 +17,11 @@ export default function Home() {
     <main>
       <Hero />
       <Features />
-      <Cook />
+      {/*<Cook />*/}
       <Expert />
-      <Gallery />
-      <ContactForm />
+      {/*<Gallery />*/}
+      {/*<ContactForm />*/}
+        <Tech />
       <Newsletter />
     </main>
   )

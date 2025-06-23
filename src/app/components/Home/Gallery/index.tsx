@@ -20,11 +20,72 @@ const Gallery = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setGalleryImages(data.GalleryImagesData)
-        setFullMenu(data.FullMenuData)
+        setGalleryImages(
+            [
+              {
+                src: '/images/Gallery/foodone.webp',
+                name: 'Caesar Salad(187 Kcal)',
+                price: 35,
+              },
+              {
+                src: '/images/Gallery/foodtwo.webp',
+                name: 'Christmas salad(118 Kcal)',
+                price: 17,
+              },
+              {
+                src: '/images/Gallery/foodthree.webp',
+                name: 'Sauteed mushrooms with pumpkin bowl(238 kcal)',
+                price: 45,
+              },
+              {
+                src: '/images/Gallery/foodfour.webp',
+                name: 'BBQ Chicken Feast Pizza(272 kcal)',
+                price: 27,
+              },
+            ]
+        )
+        setFullMenu(
+            [
+              {
+                name: 'Grilled Salmon',
+                price: '$18.99',
+                description: 'Served with lemon butter sauce and grilled vegetables.',
+              },
+              {
+                name: 'Caesar Salad',
+                price: '$9.99',
+                description: 'Crisp romaine with parmesan, croutons, and Caesar dressing.',
+              },
+              {
+                name: 'Margherita Pizza',
+                price: '$13.49',
+                description: 'Classic pizza with tomato, mozzarella, and fresh basil.',
+              },
+              {
+                name: 'Tomato Basil Soup',
+                price: '$6.99',
+                description: 'Creamy tomato soup with a hint of garlic and fresh basil.',
+              },
+              {
+                name: 'Chocolate Lava Cake',
+                price: '$7.99',
+                description:
+                    'Warm chocolate cake with a molten center served with vanilla ice cream.',
+              },
+              {
+                name: 'Spaghetti Carbonara',
+                price: '$15.25',
+                description:
+                    'Spaghetti tossed with eggs, pancetta, parmesan, and black pepper.',
+              },
+              {
+                name: 'Tiramisu',
+                price: '$8.50',
+                description:
+                    'Layered espresso-soaked ladyfingers with mascarpone and cocoa.',
+              },
+            ]
+        )
       } catch (error) {
         console.error('Error fetching services:', error)
       } finally {
@@ -39,9 +100,9 @@ const Gallery = () => {
       <div className='container'>
         <div className='text-center'>
           <p className='text-primary text-lg font-normal mb-3 tracking-widest uppercase'>
-            Our Menu
+            A Sneak peek..
           </p>
-          <h2>Explore Our Signature Dishes</h2>
+          <h2>Simple, clean, and <div className='text-primary italic'>friendly</div></h2>
         </div>
         <div className='my-16 px-6'>
           <Masonry

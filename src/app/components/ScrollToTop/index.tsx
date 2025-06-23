@@ -1,6 +1,6 @@
 'use client'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
+import Link from "next/link";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
@@ -32,6 +32,14 @@ export default function ScrollToTop() {
   return (
     <div className='fixed bottom-8 right-8 z-999'>
       <div className='flex items-center gap-2.5'>
+        <Link
+            href={
+              'https://www.figma.com/proto/hEupSDAlJcTLWVQ3xbNc7B/AquaLeanyer?node-id=1-49&p=f&t=ch2MYqFTVxOSqpLm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A49'
+            }
+            target='_blank'
+            className='hidden lg:block bg-primary text-white hover:bg-darkmode text-sm px-4 py-3.5 leading-none rounded-lg font-medium text-nowrap'>
+          Figma Demo
+        </Link>
         {isVisible && (
           <div
             onClick={scrollToTop}

@@ -24,10 +24,14 @@ const Header: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setHeaderLink(data.HeaderData)
+        setHeaderLink(
+            [
+              { label: 'About Us', href: '/#team' },
+              { label: 'Features', href: '/#features' },
+              { label: 'Tech', href: '/#tech' },
+              { label: 'Code', href: '/#source' },
+            ]
+        )
       } catch (error) {
         console.error('Error fetching services:', error)
       }
