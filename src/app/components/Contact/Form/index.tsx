@@ -82,7 +82,7 @@ const ContactForm = () => {
             reservation
           </p>
         <h2 className='mb-9 font-bold tracking-tight text-center'>
-          Dine With Us
+          J
         </h2>
         <div className='relative border px-6 py-2 rounded-3xl'>
           <form
