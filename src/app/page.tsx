@@ -17,7 +17,7 @@ export default function Home() {
     <main>
       <Hero />
       <Features />
-      {/*<Cook />*/}
+      <Cook />
       <Expert />
       {/*<Gallery />*/}
       {/*<ContactForm />*/}

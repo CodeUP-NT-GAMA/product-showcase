@@ -23,28 +23,28 @@ const Expert = () => {
                 linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
               },
               {
-                profession: 'UI / UX Designer',
+                profession: 'Software Engineer',
                 name: 'Chathura Janadara',
                 imgSrc: '/images/Expert/Chathura.png',
-                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+                linkedin: 'https://www.linkedin.com/in/chathura-janadara/',
               },
               {
                 profession: 'QA Engineer',
                 name: 'Prajwal Niroula',
                 imgSrc: '/images/Expert/Prajwal.png',
-                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+                linkedin: 'https://www.linkedin.com/in/prajwalniroula/',
               },
               {
                 profession: 'Software Engineer',
                 name: 'Ravindu Supun',
                 imgSrc: '/images/Expert/Ravindu.png',
-                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+                linkedin: 'https://www.linkedin.com/in/ravidu-karunathilaka-4aa2001a9/',
               },
               {
                 profession: 'Full Stack Developer',
                 name: 'Bishnu Khanal',
                 imgSrc: '/images/Expert/Bishnu.png',
-                linkedin: 'https://www.linkedin.com/in/ayesh-jayasekara/',
+                linkedin: 'https://www.linkedin.com/in/bishnu-prasad-khanal-916aa6351/',
               },
             ]
         )
