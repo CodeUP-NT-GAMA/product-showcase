@@ -19,7 +19,7 @@ export default function Home() {
       <Features />
       <Cook />
       <Expert />
-      {/*<Gallery />*/}
+      <Gallery />
       {/*<ContactForm />*/}
         <Tech />
       <Newsletter />
